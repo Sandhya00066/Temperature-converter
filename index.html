@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h2 class="heading">Temperature Converter</h2>
+
+        <div class="section">
+          <div class="DegreeSection">
+            <label for="temperatureInput" class="degree">Degrees:</label>
+            <input
+              type="number"
+              id="temperatureInput"
+              class="inputValue"
+              placeholder="Enter temperature"
+            />
+          </div>
+
+          <div class="TypeSection">
+            <label for="unitValue" class="unit">Unit Type:</label>
+            <select name="unit" id="unitValue" class="select-dropdown">
+              <option value="">Select Unit</option>
+              <option value="F">Fahrenheit (°F)</option>
+              <option value="C">Celsius (°C)</option>
+              <option value="K">Kelvin (K)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="result-section">
+          <h3 class="result-label">Result:</h3>
+          <div class="Result"></div>
+        </div>
+
+        <div class="divider">
+          Formula: <br>  <span class="formula"></span>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
